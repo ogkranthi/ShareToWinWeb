@@ -3,7 +3,7 @@ import AppAssetService from "../services/AppAssetService";
 import { IUserProp, UserTypes, IUserViewState, IAsset } from "../services/AppModels";
 import {
   Container,
-  //Jumbotron,
+  Jumbotron,
   Card,
   Row,
   Col,
@@ -144,7 +144,7 @@ export default class UserView extends React.Component<IUserProp, IUserViewState>
     }
     return <>
       <Container fluid>
-        {/*<Jumbotron>
+        <Jumbotron>
           {renderAdminContent()}
           {renderBuyerAccounts()}<p></p>
           <Card>
@@ -157,7 +157,6 @@ export default class UserView extends React.Component<IUserProp, IUserViewState>
           </Card>
           <p></p>
         </Jumbotron>
-        */}
       </Container>
       <Modal show={this.state.showModal} onHide={this.onModalToggle}>
         <Modal.Header closeButton>
